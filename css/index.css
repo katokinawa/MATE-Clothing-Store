@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 1920px;
+}
+
+.text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: black;
+}
+
+.text-big {
+  text-transform: uppercase;
+}
+
+.page__attention {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  background-color: #313131;
+}
+.header {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  background-color: white;
+}
+
+.header__logo {
+  width: 82px;
+  height: 18px;
+  background-image: url(../img/svg/logo.svg);
+  margin: 0 38px 0 10px;
+}
+.header__list-start {
+  display: flex;
+  margin: 15px 0 0 0;
+}
+
+.header__list-end {
+  display: flex;
+  justify-content: end;
+  margin: 19px 0 0 0;
+}
+
+.header__list-item {
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+.fav-search {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/search.svg);
+}
+
+.fav-account {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/account.svg);
+}
+
+.fav-flag {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/flag.svg);
+}
+
+.fav-bag {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/bag.svg);
+}
