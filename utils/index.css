@@ -21,4 +21,13 @@
 @import url(../css/banner/__button-wrapper/banner__button-wrapper.css);
 @import url(../css/banner/__inner-button/banner__inner-button.css);
 @import url(../css/footer/footer.css);
-
+@import url(../css/footer/__list-wrapper/footer__list-wrapper.css);
+@import url(../css/footer/__list/footer__list.css);
+@import url(../css/footer/__list-item/_margin-bottom_25/footer__list-item_margin-bottom_25.css);
+@import url(../css/footer/__list-item/_margin-bottom_15/footer__list-item_margin-bottom_15.css);
+@import url(../css/footer/__list-item/footer__list-item.css);
+@import url(../css/footer/__promo/footer__promo.css);
+@import url(../css/footer/__promo-heading/footer__promo-heading.css);
+@import url(../css/footer/__promo-form/footer__promo-form.css);
+@import url(../css/footer/__promo-button/footer__promo-button.css);
+@import url(../css/footer/__promo-input/footer__promo-input.css);

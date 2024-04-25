@@ -1,3 +1,5 @@
+/* text */
+
 .text {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #313131;
@@ -8,9 +10,14 @@
   color: #313131;
 }
 
-.text-big {
+.text-uppercase {
   text-transform: uppercase;
 }
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+/* margin */
 
 .margin-right-30 {
   margin: 0 30px 0 0;
@@ -24,7 +31,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 /* favicon */
 

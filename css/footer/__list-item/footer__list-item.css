@@ -1,0 +1,8 @@
+.footer__list-item {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer__list-item:first-child {
+  font-weight: 600;
+}
