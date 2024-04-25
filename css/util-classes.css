@@ -1,0 +1,53 @@
+.text {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: #313131;
+}
+
+.text-second-family {
+  font-family: "JetBrains Mono", "Arial", sans-serif;
+  color: #313131;
+}
+
+.text-big {
+  text-transform: uppercase;
+}
+
+.margin-right-30 {
+  margin: 0 30px 0 0;
+}
+
+.margin-left-30 {
+  margin: 0 0 0 30px;
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* favicon */
+
+.fav-search {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/search.svg);
+}
+
+.fav-account {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/account.svg);
+}
+
+.fav-flag {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/flag.svg);
+}
+
+.fav-bag {
+  width: 21px;
+  height: 21px;
+  background-image: url(/img/svg/bag.svg);
+}
