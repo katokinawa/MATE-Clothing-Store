@@ -1,0 +1,10 @@
+.footer__promo-checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.footer__promo-checkbox:checked + .footer__checkbox::after {
+  content: '';
+}

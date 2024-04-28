@@ -1,0 +1,16 @@
+.footer__promo-field {
+  border: none;
+  outline: none;
+  width: 102px;
+  height: 33px;
+  border-radius: 30px;
+  font-size: 12px;
+  border: 1px solid #dedede;
+  background-color: #ededed;
+  padding-left: 18px;
+}
+
+.footer__promo-field:focus {
+  width: 100%;
+  background-color: #dedede;
+}

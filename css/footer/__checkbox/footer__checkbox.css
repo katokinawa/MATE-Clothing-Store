@@ -1,0 +1,27 @@
+.footer__checkbox {
+  position: relative;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.footer__checkbox::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+.footer__checkbox::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background-color: #313131;
+}
