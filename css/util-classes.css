@@ -1,10 +1,7 @@
 /* text */
 
-.text {
-  color: #313131;
-}
-
 .text-second-family {
+  font-size: 12px;
   font-family: "JetBrains Mono", "Arial", sans-serif;
   color: #313131;
 }

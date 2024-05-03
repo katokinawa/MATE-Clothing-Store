@@ -18,6 +18,13 @@
 @import url(../css/banner/__inner-button/banner__inner-button.css);
 @import url(../css/footer/footer.css);
 @import url(../css/footer/__list-wrapper/footer__list-wrapper.css);
+@import url(../css/photo-slider/photo-slider.css);
+@import url(../css/photo-slider/__wrapper/photo-slide__wrapper.css);
+@import url(../css/photo-slider/__promo-text/photo-slider__promo-text.css);
+@import url(../css/photo-slider/__favorite-icon/photo-slider__favorite-icon.css);
+@import url(../css/photo-slider/__img/photo-slider__img.css);
+@import url(../css/photo-slider/__heading/photo-slider__heading.css);
+@import url(../css/photo-slider/__price-text/photo-slider__price-text.css);
 @import url(../css/footer/__list/footer__list.css);
 @import url(../css/footer/__list-item/footer__list-item.css);
 @import url(../css/footer/__promo/footer__promo.css);
@@ -30,5 +37,3 @@
 @import url(../css/footer/__checkbox-wrapper/footer__checkbox-wrapper.css);
 @import url(../css/footer/__checkbox/footer__checkbox.css);
 @import url(../css/footer/__promo-button/footer__promo-button.css);
-@import url(../css/slider/slider.css);
-@import url(../css/slider/__text/slider__text.css);

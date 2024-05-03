@@ -1,0 +1,6 @@
+.photo-slider__img {
+  width: 470px;
+  height: 627px;
+  position: absolute;
+  z-index: -1;
+}
