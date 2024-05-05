@@ -1,0 +1,7 @@
+.photo-slider__sizes-wrapper {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 17px;
+  left: 12px;
+}

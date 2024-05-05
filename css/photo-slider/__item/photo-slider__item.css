@@ -1,0 +1,5 @@
+.photo-slider__item {
+  position: relative;
+  width: 470px;
+  min-height: 627px;
+}

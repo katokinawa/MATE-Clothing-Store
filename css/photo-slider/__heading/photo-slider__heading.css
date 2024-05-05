@@ -1,5 +1,7 @@
 .photo-slider__heading {
-  margin: 10px 0 0 10px;
   font-weight: 500;
   font-size: 13px;
+  position: absolute;
+  bottom: 60px;
+  left: 12px;
 }
