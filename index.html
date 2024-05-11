@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/utils/index.css" />
   <title>MATE31</title>
 </head>
-
 <body class="body">
   <div class="page">
     <div class="page__attention text-uppercase">Attention! THIS SITE IS FOR VIEWING ONLY. NOT FOR SHOPPING.</div>
@@ -42,13 +40,15 @@
         </div>
       </article>
       <article class="photo-slider">
+        <!--
         <section class="photo-slider__item">
-          <img class="photo-slider__img" src="/img/models/model01.jpg" alt="Девушка в черной рубашке"/>
+          <img class="photo-slider__img" src="" alt="Девушка в черной рубашке"/>
           <p class="photo-slider__promo-text text-second-family text-uppercase">НОВОЕ</p>
           <div class="photo-slider__favorite-icon"></div>
           <h3 class="photo-slider__heading text-second-family text-uppercase">Рубашка Рени из жатой ткани</h3>
-          <p class="photo-slider__price-text text-second-family">8 990 ₽</p>
-          <!-- Происходит GET, который забирает с сервера нужные размеры и их наличии, еси наличия нет помечает серым цветом -->
+          <p class="photo-slider__price-text text-second-family">8 990 ₽</p> -->
+          <!-- Происходит GET, который забирает с сервера нужные размеры и их наличии, если наличия нет помечает серым цветом -->
+          <!--
           <div class="photo-slider__sizes-wrapper">
             <p class="photo-slider__sizes-text">XXS</p>
             <p class="photo-slider__sizes-text">XS</p>
@@ -57,54 +57,7 @@
             <p class="photo-slider__sizes-text">L</p>
             <p class="photo-slider__sizes-text">XL</p>
           </div>
-        </section>
-        <section class="photo-slider__item">
-          <img class="photo-slider__img" src="/img/models/model01.jpg" alt="Девушка в черной рубашке"/>
-          <p class="photo-slider__promo-text text-second-family text-uppercase">НОВОЕ</p>
-          <div class="photo-slider__favorite-icon"></div>
-          <h3 class="photo-slider__heading text-second-family text-uppercase">Рубашка Рени из жатой ткани</h3>
-          <p class="photo-slider__price-text text-second-family">8 990 ₽</p>
-          <!-- Происходит GET, который забирает с сервера нужные размеры и их наличии, еси наличия нет помечает серым цветом -->
-          <div class="photo-slider__sizes-wrapper">
-            <p class="photo-slider__sizes-text">XXS</p>
-            <p class="photo-slider__sizes-text">XS</p>
-            <p class="photo-slider__sizes-text">S</p>
-            <p class="photo-slider__sizes-text">M</p>
-            <p class="photo-slider__sizes-text">L</p>
-            <p class="photo-slider__sizes-text">XL</p>
-          </div>
-        </section>
-        <section class="photo-slider__item">
-          <img class="photo-slider__img" src="/img/models/model01.jpg" alt="Девушка в черной рубашке"/>
-          <p class="photo-slider__promo-text text-second-family text-uppercase">НОВОЕ</p>
-          <div class="photo-slider__favorite-icon"></div>
-          <h3 class="photo-slider__heading text-second-family text-uppercase">Рубашка Рени из жатой ткани</h3>
-          <p class="photo-slider__price-text text-second-family">8 990 ₽</p>
-          <!-- Происходит GET, который забирает с сервера нужные размеры и их наличии, еси наличия нет помечает серым цветом -->
-          <div class="photo-slider__sizes-wrapper">
-            <p class="photo-slider__sizes-text">XXS</p>
-            <p class="photo-slider__sizes-text">XS</p>
-            <p class="photo-slider__sizes-text">S</p>
-            <p class="photo-slider__sizes-text">M</p>
-            <p class="photo-slider__sizes-text">L</p>
-            <p class="photo-slider__sizes-text">XL</p>
-          </div>
-        </section>
-        <section class="photo-slider__item">
-          <img class="photo-slider__img" src="/img/models/model01.jpg" alt="Девушка в черной рубашке"/>
-          <p class="photo-slider__promo-text text-second-family text-uppercase">НОВОЕ</p>
-          <div class="photo-slider__favorite-icon"></div>
-          <h3 class="photo-slider__heading text-second-family text-uppercase">Рубашка Рени из жатой ткани</h3>
-          <p class="photo-slider__price-text text-second-family">8 990 ₽</p>
-          <!-- Происходит GET, который забирает с сервера нужные размеры и их наличии, еси наличия нет помечает серым цветом -->
-          <div class="photo-slider__sizes-wrapper">
-            <p class="photo-slider__sizes-text">XXS</p>
-            <p class="photo-slider__sizes-text">XS</p>
-            <p class="photo-slider__sizes-text">S</p>
-            <p class="photo-slider__sizes-text">M</p>
-            <p class="photo-slider__sizes-text">L</p>
-            <p class="photo-slider__sizes-text">XL</p>
-          </div>
+          -->
         </section>
       </article>
     </main>
@@ -181,6 +134,23 @@
       </section>
     </footer>
   </div>
+  <template id="slider">
+    <section class="photo-slider__item">
+      <img class="photo-slider__img" src="" alt=""/>
+      <p class="photo-slider__promo-text text-second-family text-uppercase disable">НОВОЕ</p>
+      <div class="photo-slider__favorite-icon"></div>
+      <h3 class="photo-slider__heading text-second-family text-uppercase"></h3>
+      <p class="photo-slider__price-text text-second-family"></p>
+      <div class="photo-slider__sizes-wrapper disable">
+        <p class="photo-slider__sizes-text disable">XXS</p>
+        <p class="photo-slider__sizes-text disable">XS</p>
+        <p class="photo-slider__sizes-text disable">S</p>
+        <p class="photo-slider__sizes-text disable">M</p>
+        <p class="photo-slider__sizes-text disable">L</p>
+        <p class="photo-slider__sizes-text disable">XL</p>
+      </div>
+    </section>
+  </template>
+  <script src="/components/index.js"></script>
 </body>
-
 </html>
