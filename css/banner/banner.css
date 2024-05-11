@@ -1,5 +1,5 @@
 .banner {
-  height: 1118px;
+  min-height: 1118px;
   position: relative;
   display: flex;
   justify-content: center;

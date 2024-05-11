@@ -1,6 +1,7 @@
 @import url(../vendor/fonts/JetBrainsMono/font-jetbrains-mono.css);
 @import url(../css/util-classes.css);
 @import url(../css/*/*.css);
+@import url(../css/body/body.css);
 @import url(../css/page/page.css);
 @import url(../css/page/__attention/page__attention.css);
 @import url(../css/header/header.css);
