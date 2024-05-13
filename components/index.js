@@ -88,10 +88,26 @@ function getTemplate() {
 function addCard(arr) {
   arr.forEach((props) => {
     const sliderTemplate = getTemplate();
+    const sizes_wrapper = sliderTemplate.querySelector('.photo-slider__sizes-wrapper');
+
+    // const price = (() => {
+    //   const el = [...props.price.toString()]
+    //   if(el) {
+
+    //   }
+    // });
+
     sliderTemplate.querySelector('.photo-slider__img').src = props.img_src;
     sliderTemplate.querySelector('.photo-slider__img').alt = props.img_alt;
     sliderTemplate.querySelector('.photo-slider__heading').textContent = props.name;
-    sliderTemplate.querySelector('.photo-slider__price-text').textContent = props.price;
+    sliderTemplate.querySelector('.photo-slider__price-text').textContent = props.price + " ₽";
+    props.sizes.forEach((element) => {
+      const sizes_element = document.createElement('p');
+      sizes_element.classList.add('photo-slider__sizes-text');
+      sizes_element.classList.add('text-uppercase');
+      sizes_element.textContent = element;
+      sizes_wrapper.append(sizes_element);
+    })
     photo_slider.append(sliderTemplate);
   })
 }
