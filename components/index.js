@@ -81,6 +81,7 @@ const card_for_slider = [
   //   new: true
   // }
 ];
+const github_pages_url = "https://katokinawa.github.io/stunning-octo-waffle"
 const photo_slider = document.querySelector(".photo-slider");
 function getTemplate() {
   return document
@@ -122,8 +123,8 @@ function addCard(arr) {
       // return console.log((props.price).toString().replace)
     })();
 
-    sliderTemplate.querySelector(".photo-slider__img").src = props.img_src;
-    sliderTemplate.querySelector(".photo-slider__img").alt = props.img_alt;
+    sliderTemplate.querySelector(".photo-slider__img").src = github_pages_url + props.img_src;
+    sliderTemplate.querySelector(".photo-slider__img").alt = github_pages_url + props.img_alt;
     sliderTemplate.querySelector(".photo-slider__heading").textContent = props.name;
     sliderTemplate.querySelector(".photo-slider__price-text").textContent = price();
     // Получаем с бэкенда размеры

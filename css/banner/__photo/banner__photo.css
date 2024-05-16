@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 1118px;
   position: absolute;
-  background-image: url(/img/banners/main_banner.png);
+  background-image: url(../../../img/banners/main_banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

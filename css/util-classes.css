@@ -53,23 +53,23 @@
 .fav-search {
   width: 21px;
   height: 21px;
-  background-image: url(/img/svg/search.svg);
+  background-image: url(../img/svg/search.svg);
 }
 
 .fav-account {
   width: 21px;
   height: 21px;
-  background-image: url(/img/svg/account.svg);
+  background-image: url(../img/svg/account.svg);
 }
 
 .fav-flag {
   width: 21px;
   height: 21px;
-  background-image: url(/img/svg/flag.svg);
+  background-image: url(../img/svg/flag.svg);
 }
 
 .fav-bag {
   width: 21px;
   height: 21px;
-  background-image: url(/img/svg/bag.svg);
+  background-image: url(../img/svg/bag.svg);
 }
