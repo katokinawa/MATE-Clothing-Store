@@ -2,7 +2,7 @@
   position: relative;
   padding-left: 25px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .footer__checkbox::before {
