@@ -2,7 +2,7 @@
 const card_for_slider = [
   {
     key: 1,
-    img_src: "/img/models/model01.png",
+    img_src: "/img/models/model01.jpg",
     img_alt: "Девушка в черном платье",
     name: "Черное платье",
     price: 12500,
@@ -12,7 +12,7 @@ const card_for_slider = [
   },
   {
     key: 2,
-    img_src: "/img/models/model02.png",
+    img_src: "/img/models/model02.jpg",
     img_alt: "Девушка в красной юбке",
     name: "Красная юбка",
     price: 5400,
@@ -22,7 +22,7 @@ const card_for_slider = [
   },
   {
     key: 3,
-    img_src: "/img/models/model03.png",
+    img_src: "/img/models/model03.jpg",
     img_alt: "Девушка в синих джинсах",
     name: "Синие джинсы",
     price: 1000,
@@ -32,7 +32,7 @@ const card_for_slider = [
   },
   {
     key: 4,
-    img_src: "/img/models/model04.png",
+    img_src: "/img/models/model04.jpg",
     img_alt: "Девушка в белой рубашке",
     name: "Белая рубашка",
     price: 48000,
@@ -42,7 +42,7 @@ const card_for_slider = [
   },
   // {
   //   key: 5,
-  //   img_src: '/img/models/model05.png',
+  //   img_src: '/img/models/model05.jpg',
   //   img_alt: 'Девушка в сером пальто',
   //   name: 'Серое пальто',
   //   price: 17500,
@@ -52,7 +52,7 @@ const card_for_slider = [
   // },
   // {
   //   key: 6,
-  //   img_src: '/img/models/model06.png',
+  //   img_src: '/img/models/model06.jpg',
   //   img_alt: 'Девушка в свитере с узором',
   //   name: 'Свитер с узором',
   //   price: 8900,
@@ -62,7 +62,7 @@ const card_for_slider = [
   // },
   // {
   //   key: 7,
-  //   img_src: '/img/models/model07.png',
+  //   img_src: '/img/models/model07.jpg',
   //   img_alt: 'Девушка в черных брюках',
   //   name: 'Черные брюки',
   //   price: 6500,
@@ -72,7 +72,7 @@ const card_for_slider = [
   // },
   // {
   //   key: 8,
-  //   img_src: '/img/models/model08.png',
+  //   img_src: '/img/models/model08.jpg',
   //   img_alt: 'Девушка в кожаной куртке',
   //   name: 'Кожаная куртка',
   //   price: 14500,

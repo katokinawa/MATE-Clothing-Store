@@ -1,6 +1,9 @@
 .banner {
-  min-height: 1118px;
+  width: 100%;
+  height: calc(-82px + 100vh);
   position: relative;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
