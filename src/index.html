@@ -34,7 +34,7 @@
     <main class="main">
       <article class="banner main__banner">
         <a class="banner__link" href="#"></a>
-        <img class="banner__photo" src="./img/banners/main_banner.jpg"></img>
+        <img class="banner__photo" src="<%=require('./img/banners/main_banner.jpg')%>"></img>
         <div class="banner__button-wrapper">
           <p class="banner__inner-button text-second-family text-uppercase">Новинки коллекции</p>
         </div>
@@ -58,7 +58,7 @@
       </article>
       <article class="banner second__banner">
         <a class="banner__link" href="#"></a>
-        <img class="banner__photo" src="./img/banners/main_banner_2.jpg"></img>
+        <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
       </article>
       <article class="text-animation">
         <div class="text-animation__wrapper">
@@ -151,7 +151,7 @@
   </div>
   <template id="slider">
     <section class="photo-slider__item">
-      <img class="photo-slider__img" src="" alt=""/>
+      <img class="photo-slider__img" src="#" alt=""/>
       <p class="photo-slider__promo-text text-second-family text-uppercase disable">новое</p>
       <div class="photo-slider__favorite-icon"></div>
       <h3 class="photo-slider__heading text-second-family text-uppercase"></h3>
@@ -160,6 +160,5 @@
       </div>
     </section>
   </template>
-  <script src="./components/index.js"></script>
 </body>
 </html>

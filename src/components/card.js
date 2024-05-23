@@ -1,18 +1,18 @@
 
 
 // вебпак изменяет имена файлов при сборке поэтому импортируем их в js, а после добавляем в card_for_slider
-// import model01 from './img/models/model01.jpg'
-// import model02 from './img/models/model02.jpg'
-// import model03 from './img/models/model03.jpg'
-// import model04 from './img/models/model04.jpg'
-// import model05 from './img/models/model05.jpg'
-// import model06 from './img/models/model06.jpg'
-// import model07 from './img/models/model07.jpg'
+import model01 from '../img/models/model01.jpg'
+import model02 from '../img/models/model02.jpg'
+import model03 from '../img/models/model03.jpg'
+import model04 from '../img/models/model04.jpg'
+import model05 from '../img/models/model05.jpg'
+import model06 from '../img/models/model06.jpg'
+import model07 from '../img/models/model07.jpg'
 
-export default card_for_slider = [
+const card_for_slider = [
   {
     key: 1,
-    img_src: '/img/models/model01.jpg',
+    img_src: model01,
     img_alt: "Девушка в черном платье",
     name: "Черное платье",
     price: 12500,
@@ -20,36 +20,36 @@ export default card_for_slider = [
     visible: true,
     new: true,
   },
-  // {
-  //   key: 2,
-  //   img_src: model02,
-  //   img_alt: "Девушка в красной юбке",
-  //   name: "Красная юбка",
-  //   price: 5400,
-  //   sizes: ["s", "m", "l"],
-  //   visible: true,
-  //   new: true,
-  // },
-  // {
-  //   key: 3,
-  //   img_src: model03,
-  //   img_alt: "Девушка в синих джинсах",
-  //   name: "Синие джинсы",
-  //   price: 1000,
-  //   sizes: ["xs", "s", "m", "l", "xl"],
-  //   visible: true,
-  //   new: true,
-  // },
-  // {
-  //   key: 4,
-  //   img_src: model04,
-  //   img_alt: "Девушка в белой рубашке",
-  //   name: "Белая рубашка",
-  //   price: 48000,
-  //   sizes: ["s", "m", "l"],
-  //   visible: true,
-  //   new: true,
-  // },
+  {
+    key: 2,
+    img_src: model02,
+    img_alt: "Девушка в красной юбке",
+    name: "Красная юбка",
+    price: 5400,
+    sizes: ["s", "m", "l"],
+    visible: true,
+    new: true,
+  },
+  {
+    key: 3,
+    img_src: model03,
+    img_alt: "Девушка в синих джинсах",
+    name: "Синие джинсы",
+    price: 1000,
+    sizes: ["xs", "s", "m", "l", "xl"],
+    visible: true,
+    new: true,
+  },
+  {
+    key: 4,
+    img_src: model04,
+    img_alt: "Девушка в белой рубашке",
+    name: "Белая рубашка",
+    price: 48000,
+    sizes: ["s", "m", "l"],
+    visible: true,
+    new: true,
+  },
   // {
   //   key: 5,
   //   img_src: model05,
@@ -91,3 +91,5 @@ export default card_for_slider = [
   //   new: true
   // }
 ];
+
+export default card_for_slider;
