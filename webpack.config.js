@@ -4,10 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/pages/index.js',
   devtool: 'source-map',
   devServer: {
-    static: './dist',
+    static: path.resolve(__dirname, './dist'),
     compress: true, // gzip сжатие
     port: 8080,
     open: true
@@ -16,6 +16,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new MiniCssExtractPlugin()
   ],
   output: {
     filename: 'main.js',
@@ -25,8 +26,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: '/node_modules/'
+      },
+      {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader',
+          options: { importLoaders: 1 }
+        }, 'postcss-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
