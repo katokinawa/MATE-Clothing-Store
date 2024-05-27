@@ -18,7 +18,7 @@ const card_for_slider = [
     price: 12500,
     sizes: ["xs", "s", "m", "l", "xl"],
     visible: true,
-    new: true,
+    new: false,
   },
   {
     key: 2,
@@ -38,7 +38,7 @@ const card_for_slider = [
     price: 1000,
     sizes: ["xs", "s", "m", "l", "xl"],
     visible: true,
-    new: true,
+    new: false,
   },
   {
     key: 4,

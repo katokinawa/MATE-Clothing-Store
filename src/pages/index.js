@@ -1,5 +1,5 @@
-import card_for_slider from '../components/card'
-import './index.css';
+import card_for_slider from "../components/card";
+import "./index.css";
 
 const photo_slider = document.querySelector(".photo-slider");
 
@@ -18,35 +18,29 @@ function addCard(arr) {
     );
 
     // Добавляем для цены пробел, так как на фронт они приходят целыми числами (см. пример). Пример: 4 000, 14 000, 145 000.
-
-    const price = (() => {
-      // Получаем поле price из объекта и преобразовываем в массив
-      if (typeof props.price === "number") {
-        let price = [...props.price.toString()];
-
-        function inner() {
-          if (price.length === 4) {
-            price.splice(1, 0, " ");
-          } else if (price.length === 5) {
-            price.splice(2, 0, " ");
-          } else if (price.length === 6) {
-            price.splice(3, 0, " ");
-          }
-          return price.join("") + " ₽";
-        }
-        return inner;
-      } else {
-        // С бэкенда пришло не число
-        return () => "Цена временно недоступна";
+    function formatNumberWithSpaces(number) {
+      if (typeof number !== "number" || isNaN(number)) {
+        return "Неверный формат числа";
       }
-      // TODO: Сделать с помощью replace и RegExp
-      // return console.log((props.price).toString().replace)
-    })();
+      const parts = number.toString().split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      return parts.join(".");
+    }
+
+    // Проверка на актуальность карточки товара из этого следует добавлять надпись "НОВОЕ" или нет
+    // Приходят на фронт в виде ключ-значение new: true || new: false,
+    if (props.new === true) {
+      sliderTemplate
+        .querySelector(".photo-slider__promo-text")
+        .classList.remove("disable");
+    }
 
     sliderTemplate.querySelector(".photo-slider__img").src = props.img_src;
     sliderTemplate.querySelector(".photo-slider__img").alt = props.img_alt;
-    sliderTemplate.querySelector(".photo-slider__heading").textContent = props.name;
-    sliderTemplate.querySelector(".photo-slider__price-text").textContent = price();
+    sliderTemplate.querySelector(".photo-slider__heading").textContent =
+      props.name;
+    sliderTemplate.querySelector(".photo-slider__price-text").textContent =
+      formatNumberWithSpaces(props.price) + " ₽";
     // Получаем с бэкенда размеры
     props.sizes.forEach((element) => {
       const sizes_element = document.createElement("p");
