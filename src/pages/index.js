@@ -1,4 +1,5 @@
 import card_for_slider from "../components/card";
+import swiper from "../components/swiper";
 import "./index.css";
 
 const photo_slider = document.querySelector(".photo-slider");

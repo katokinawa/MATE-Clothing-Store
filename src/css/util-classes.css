@@ -1,6 +1,11 @@
 .disable {
   display: none;
 }
+.swiper__wrapper {
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+  display: flex;
+}
 
 /* text */
 

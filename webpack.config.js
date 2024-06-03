@@ -6,12 +6,17 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: { main: "./src/pages/index.js" },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
+    publicPath: ''
+  },
   devtool: "source-map",
   devServer: {
     static: path.resolve(__dirname, "./dist"),
-    compress: true, // gzip сжатие
-    port: 8080,
     open: true,
+    compress: true,
+    port: 8080,
   },
   module: {
     rules: [
@@ -48,9 +53,4 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
   ],
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
-    publicPath: ''
-  },
 };

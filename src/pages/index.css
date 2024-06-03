@@ -17,9 +17,9 @@
 @import url(../css/banner/__photo/banner__photo.css);
 @import url(../css/banner/__button-wrapper/banner__button-wrapper.css);
 @import url(../css/banner/__inner-button/banner__inner-button.css);
-@import url(../css/text-animation/text-animation.css);
-@import url(../css/text-animation/__font-size/text-animation__font-size.css);
-@import url(../css/text-animation/__wrapper/text-animation__wrapper.css);
+@import url(../css/modules/swiper__text.css);
+@import url(../css/swiper__wrapper/swiper__wrapper.css);
+@import url(../css/swiper/swiper.css);
 @import url(../css/footer/footer.css);
 @import url(../css/footer/__list-wrapper/footer__list-wrapper.css);
 @import url(../css/photo-slider/photo-slider.css);
@@ -43,3 +43,4 @@
 @import url(../css/footer/__checkbox-wrapper/footer__checkbox-wrapper.css);
 @import url(../css/footer/__checkbox/footer__checkbox.css);
 @import url(../css/footer/__promo-button/footer__promo-button.css);
+@import 'swiper/css/bundle';

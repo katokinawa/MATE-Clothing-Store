@@ -1,0 +1,8 @@
+.swiper__text {
+  max-width: 100%;
+}
+
+.swiper__text::before {
+  content: '🤍';
+  margin-right: 0.5rem;
+}

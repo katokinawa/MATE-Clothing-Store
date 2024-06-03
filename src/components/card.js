@@ -13,8 +13,8 @@ const card_for_slider = [
   {
     key: 1,
     img_src: model01,
-    img_alt: "Девушка в черном платье",
-    name: "Черное платье",
+    img_alt: "Кот в красной рубашке",
+    name: "Кот в красной рубашке",
     price: 12500,
     sizes: ["xs", "s", "m", "l", "xl"],
     visible: true,
@@ -23,8 +23,8 @@ const card_for_slider = [
   {
     key: 2,
     img_src: model02,
-    img_alt: "Девушка в красной юбке",
-    name: "Красная юбка",
+    img_alt: "Серьёзный тип в костюме",
+    name: "Серьёзный тип в костюме",
     price: 5400,
     sizes: ["s", "m", "l"],
     visible: true,
@@ -33,8 +33,8 @@ const card_for_slider = [
   {
     key: 3,
     img_src: model03,
-    img_alt: "Девушка в синих джинсах",
-    name: "Синие джинсы",
+    img_alt: "Худи на мальчика",
+    name: "Худи на мальчика",
     price: 1000,
     sizes: ["xs", "s", "m", "l", "xl"],
     visible: true,
@@ -43,8 +43,8 @@ const card_for_slider = [
   {
     key: 4,
     img_src: model04,
-    img_alt: "Девушка в белой рубашке",
-    name: "Белая рубашка",
+    img_alt: "Анатолий Александрович Вассерман",
+    name: "Анатолий Александрович Вассерман",
     price: 48000,
     sizes: ["s", "m", "l"],
     visible: true,

@@ -1,9 +1,0 @@
-.text-animation__font-size {
-  font-size: 1.8rem;
-  white-space: nowrap;
-}
-
-.text-animation__font-size::before {
-  content: '🤍';
-  margin-right: 0.5rem;
-}
