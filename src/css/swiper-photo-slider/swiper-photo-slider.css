@@ -1,5 +1,3 @@
 .swiper-photo-slider {
-  display: flex;
-  gap: 10px;
-  min-width: 0;
+  overflow: hidden;
 }
