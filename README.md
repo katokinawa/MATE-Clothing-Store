@@ -16,4 +16,4 @@ Pet Project: Сайт магазина одежды MATE. Можно просм�
 - Webpack, prettier, фукционал распределить по компонентам (приложение -> модуль -> компонент -> класс -> методы);
 - Бэкенд (the last one).
 
-Github Pages: https://katokinawa.github.io/stunning-octo-waffle/
+Github Pages: https://katokinawa.github.io/MATE-Clothing-Store/
