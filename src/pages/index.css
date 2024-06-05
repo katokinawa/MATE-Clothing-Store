@@ -23,7 +23,8 @@
 @import url(../css/footer/footer.css);
 @import url(../css/footer/__list-wrapper/footer__list-wrapper.css);
 @import url(../css/swiper-photo-slider/swiper-photo-slider.css);
-@import url(../css/swiper-photo-slider/__item/swiper-photo-slider__item.css);
+@import url(../css/swiper-photo-slider/__item-photo/swiper-photo-slider__item-photo.css);
+@import url(../css/swiper-photo-slider/__item-text/swiper-photo-slider__item-text.css);
 @import url(../css/swiper-photo-slider/__promo-text/swiper-photo-slider__promo-text.css);
 @import url(../css/swiper-photo-slider/__favorite-icon/swiper-photo-slider__favorite-icon.css);
 @import url(../css/swiper-photo-slider/__img/swiper-photo-slider__img.css);

@@ -63,6 +63,10 @@
         <div class="swiper-wrapper swiper__photo-slider">
         </div>
       </article>
+      <article class="swiper-text-slider">
+        <div class="swiper-wrapper swiper__text-slider">
+        </div>
+      </article>
       <article class="banner second__banner">
         <a class="banner__link" href="#"></a>
         <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
@@ -160,11 +164,15 @@
       </section>
     </footer>
   </div>
-  <template id="slider">
-    <div class="swiper-slide swiper-photo-slider__item">
+  <template id="slider-photo">
+    <div class="swiper-slide swiper-photo-slider__item-photo">
       <img class="swiper-photo-slider__img" src="#" alt="" />
       <p class="swiper-photo-slider__promo-text text-second-family text-uppercase disable">новое</p>
       <div class="swiper-photo-slider__favorite-icon"></div>
+    </div>
+  </template>
+  <template id="slider-text">
+    <div class="swiper-slide swiper-photo-slider__item-text">
       <h3 class="swiper-photo-slider__heading text-second-family text-uppercase"></h3>
       <p class="swiper-photo-slider__price-text text-second-family"></p>
       <div class="swiper-photo-slider__sizes-wrapper">

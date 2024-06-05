@@ -15,17 +15,17 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const swiper_for_photo_slider = new Swiper('.swiper-photo-slider', {
-  spaceBetween: 30,
-  slidesPerView: 4,
-  loop: true,
+let swiper_for_photo_slider = new Swiper('.swiper-photo-slider', {
+  spaceBetween: 10,
+  slidesPerView: 4
 })
 
-// const swiper_for_text_slider = new Swiper('.swiper-photo-slider', {
-//   slideClass: 'swiper__slide-text',
-//   spaceBetween: 30,
-//   slidesPerView: 4,
-//   loop: true,
-// })
+let swiper_for_text_slider = new Swiper('.swiper-text-slider', {
+  spaceBetween: 10,
+  slidesPerView: 4
+})
 
-export { swiper, swiper_for_photo_slider };
+swiper_for_photo_slider.controller.control = swiper_for_text_slider;
+swiper_for_text_slider.controller.control = swiper_for_photo_slider;
+
+export { swiper, swiper_for_photo_slider, swiper_for_text_slider };

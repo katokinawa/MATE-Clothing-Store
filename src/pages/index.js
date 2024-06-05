@@ -3,19 +3,27 @@ import { swiper, swiper_for_photo_slider, swiper_for_text_slider } from "../comp
 import "./index.css";
 
 const photo_slider = document.querySelector(".swiper__photo-slider");
+const text_slider = document.querySelector(".swiper__text-slider");
 
-function getTemplate() {
+function getTemplatePhoto() {
   return document
-    .querySelector("#slider")
-    .content.querySelector(".swiper-photo-slider__item")
+    .querySelector("#slider-photo")
+    .content.querySelector(".swiper-photo-slider__item-photo")
+    .cloneNode(true);
+}
+function getTemplateText() {
+  return document
+    .querySelector("#slider-text")
+    .content.querySelector(".swiper-photo-slider__item-text")
     .cloneNode(true);
 }
 
 function addCard(arr) {
   arr.forEach((props) => {
-    const sliderTemplate = getTemplate();
-    console.log(sliderTemplate)
-    const sizes_wrapper = sliderTemplate.querySelector(
+    const sliderTemplatePhoto = getTemplatePhoto();
+    const sliderTemplateText = getTemplateText();
+
+    const sizes_wrapper = sliderTemplateText.querySelector(
       ".swiper-photo-slider__sizes-wrapper"
     );
 
@@ -32,16 +40,16 @@ function addCard(arr) {
     // Проверка на актуальность карточки товара из этого следует добавлять надпись "НОВОЕ" или нет
     // Приходят на фронт в виде ключ-значение new: true || new: false,
     if (props.new === true) {
-      sliderTemplate
+      sliderTemplatePhoto
         .querySelector(".swiper-photo-slider__promo-text")
         .classList.remove("disable");
     }
 
-    sliderTemplate.querySelector(".swiper-photo-slider__img").src = props.img_src;
-    sliderTemplate.querySelector(".swiper-photo-slider__img").alt = props.img_alt;
-    sliderTemplate.querySelector(".swiper-photo-slider__heading").textContent =
+    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").src = props.img_src;
+    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").alt = props.img_alt;
+    sliderTemplateText.querySelector(".swiper-photo-slider__heading").textContent =
       props.name;
-    sliderTemplate.querySelector(".swiper-photo-slider__price-text").textContent =
+    sliderTemplateText.querySelector(".swiper-photo-slider__price-text").textContent =
       formatNumberWithSpaces(props.price) + " ₽";
     // Получаем с бэкенда размеры
     props.sizes.forEach((element) => {
@@ -52,7 +60,8 @@ function addCard(arr) {
       sizes_wrapper.append(sizes_element);
     });
     // Добавляем размеры в наш template
-    photo_slider.append(sliderTemplate);
+    photo_slider.append(sliderTemplatePhoto);
+    text_slider.append(sliderTemplateText);
   });
 }
 
