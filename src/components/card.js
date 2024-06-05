@@ -49,47 +49,37 @@ const card_for_slider = [
     sizes: ["s", "m", "l"],
     visible: true,
     new: true,
+    },
+  {
+    key: 5,
+    img_src: model05,
+    img_alt: 'Девушка в сером пальто',
+    name: 'Серое пальто',
+    price: 17500,
+    sizes: ["s", "m", "l", "xl"],
+    visible: true,
+    new: true
   },
-  // {
-  //   key: 5,
-  //   img_src: model05,
-  //   img_alt: 'Девушка в сером пальто',
-  //   name: 'Серое пальто',
-  //   price: 17500,
-  //   sizes: ["s", "m", "l", "xl"],
-  //   visible: true,
-  //   new: true
-  // },
-  // {
-  //   key: 6,
-  //   img_src: model06,
-  //   img_alt: 'Девушка в свитере с узором',
-  //   name: 'Свитер с узором',
-  //   price: 8900,
-  //   sizes: ["xs", "s", "m", "l"],
-  //   visible: true,
-  //   new: true
-  // },
-  // {
-  //   key: 7,
-  //   img_src: model07,
-  //   img_alt: 'Девушка в черных брюках',
-  //   name: 'Черные брюки',
-  //   price: 6500,
-  //   sizes: ["xs", "s", "m", "l", "xl"],
-  //   visible: true,
-  //   new: true
-  // },
-  // {
-  //   key: 8,
-  //   img_src: model08,
-  //   img_alt: 'Девушка в кожаной куртке',
-  //   name: 'Кожаная куртка',
-  //   price: 14500,
-  //   sizes: ["s", "m", "l"],
-  //   visible: true,
-  //   new: true
-  // }
+  {
+    key: 6,
+    img_src: model06,
+    img_alt: 'Девушка в свитере с узором',
+    name: 'Свитер с узором',
+    price: 8900,
+    sizes: ["xs", "s", "m", "l"],
+    visible: true,
+    new: true
+  },
+  {
+    key: 7,
+    img_src: model07,
+    img_alt: 'Девушка в черных брюках',
+    name: 'Черные брюки',
+    price: 6500,
+    sizes: ["xs", "s", "m", "l", "xl"],
+    visible: true,
+    new: true
+  }
 ];
 
 export default card_for_slider;

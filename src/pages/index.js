@@ -1,21 +1,22 @@
 import card_for_slider from "../components/card";
-import swiper from "../components/swiper";
+import { swiper, swiper_for_photo_slider, swiper_for_text_slider } from "../components/swiper";
 import "./index.css";
 
-const photo_slider = document.querySelector(".photo-slider");
+const photo_slider = document.querySelector(".swiper__photo-slider");
 
 function getTemplate() {
   return document
     .querySelector("#slider")
-    .content.querySelector(".photo-slider__item")
+    .content.querySelector(".swiper-photo-slider__item")
     .cloneNode(true);
 }
 
 function addCard(arr) {
   arr.forEach((props) => {
     const sliderTemplate = getTemplate();
+    console.log(sliderTemplate)
     const sizes_wrapper = sliderTemplate.querySelector(
-      ".photo-slider__sizes-wrapper"
+      ".swiper-photo-slider__sizes-wrapper"
     );
 
     // Добавляем для цены пробел, так как на фронт они приходят целыми числами (см. пример). Пример: 4 000, 14 000, 145 000.
@@ -32,20 +33,20 @@ function addCard(arr) {
     // Приходят на фронт в виде ключ-значение new: true || new: false,
     if (props.new === true) {
       sliderTemplate
-        .querySelector(".photo-slider__promo-text")
+        .querySelector(".swiper-photo-slider__promo-text")
         .classList.remove("disable");
     }
 
-    sliderTemplate.querySelector(".photo-slider__img").src = props.img_src;
-    sliderTemplate.querySelector(".photo-slider__img").alt = props.img_alt;
-    sliderTemplate.querySelector(".photo-slider__heading").textContent =
+    sliderTemplate.querySelector(".swiper-photo-slider__img").src = props.img_src;
+    sliderTemplate.querySelector(".swiper-photo-slider__img").alt = props.img_alt;
+    sliderTemplate.querySelector(".swiper-photo-slider__heading").textContent =
       props.name;
-    sliderTemplate.querySelector(".photo-slider__price-text").textContent =
+    sliderTemplate.querySelector(".swiper-photo-slider__price-text").textContent =
       formatNumberWithSpaces(props.price) + " ₽";
     // Получаем с бэкенда размеры
     props.sizes.forEach((element) => {
       const sizes_element = document.createElement("p");
-      sizes_element.classList.add("photo-slider__sizes-text");
+      sizes_element.classList.add("swiper-photo-slider__sizes-text");
       sizes_element.classList.add("text-uppercase");
       sizes_element.textContent = element;
       sizes_wrapper.append(sizes_element);
