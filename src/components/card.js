@@ -53,8 +53,8 @@ const card_for_slider = [
   {
     key: 5,
     img_src: model05,
-    img_alt: 'Девушка в сером пальто',
-    name: 'Серое пальто',
+    img_alt: 'Ковбойский костюм',
+    name: 'Ковбойский костюм. 3+',
     price: 17500,
     sizes: ["s", "m", "l", "xl"],
     visible: true,
@@ -63,8 +63,8 @@ const card_for_slider = [
   {
     key: 6,
     img_src: model06,
-    img_alt: 'Девушка в свитере с узором',
-    name: 'Свитер с узором',
+    img_alt: 'Костюмы на пошив. Эксклюзив',
+    name: 'Костюмы на пошив. Эксклюзив',
     price: 8900,
     sizes: ["xs", "s", "m", "l"],
     visible: true,
@@ -73,8 +73,8 @@ const card_for_slider = [
   {
     key: 7,
     img_src: model07,
-    img_alt: 'Девушка в черных брюках',
-    name: 'Черные брюки',
+    img_alt: 'Красный бархат',
+    name: 'Красный бархат',
     price: 6500,
     sizes: ["xs", "s", "m", "l", "xl"],
     visible: true,
