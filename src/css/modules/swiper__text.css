@@ -1,8 +1,10 @@
 .swiper__text {
   max-width: 100%;
+  font-size: 1.8rem;
 }
 
 .swiper__text::before {
-  content: '🤍';
-  margin-right: 0.5rem;
+  content: '-`♡´-';
+  margin-right: 3.5rem;
+
 }

@@ -8,6 +8,29 @@
   display: flex;
 }
 
+.swiper-photo-slider {
+  position: relative;
+}
+
+.swiper-photo-slider .swiper-button-prev::after {
+  content: '';
+  background-image: url(../img/svg/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-photo-slider .swiper-button-next::after {
+  content: '';
+  background-image: url(../img/svg/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
 /* text */
 
 .text-second-family {
