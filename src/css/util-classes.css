@@ -1,10 +1,19 @@
+:root {
+  --fav-header-width: 22px;
+  --fav-header-height: 22px;
+}
+
 .disable {
   display: none;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .swiper__wrapper {
   -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
   display: flex;
 }
 
@@ -31,6 +40,7 @@
   width: 24px;
   height: 24px;
 }
+
 /* text */
 
 .text-second-family {
@@ -46,6 +56,7 @@
 .text-lowercase {
   text-transform: lowercase;
 }
+
 /* margin */
 
 .margin-right-15 {
@@ -80,25 +91,25 @@
 /* favicon */
 
 .fav-search {
-  width: 21px;
-  height: 21px;
+  width: var(--fav-header-width);
+  height: var(--fav-header-height);
   background-image: url(../img/svg/search.svg);
 }
 
 .fav-account {
-  width: 21px;
-  height: 21px;
+  width: var(--fav-header-width);
+  height: var(--fav-header-height);
   background-image: url(../img/svg/account.svg);
 }
 
 .fav-flag {
-  width: 21px;
-  height: 21px;
+  width: var(--fav-header-width);
+  height: var(--fav-header-height);
   background-image: url(../img/svg/flag.svg);
 }
 
 .fav-bag {
-  width: 21px;
-  height: 21px;
+  width: var(--fav-header-width);
+  height: var(--fav-header-height);
   background-image: url(../img/svg/bag.svg);
 }

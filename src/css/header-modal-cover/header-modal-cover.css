@@ -1,0 +1,9 @@
+.header-modal-cover {
+  z-index: 15;
+  position: fixed;
+  background-color: green;
+  width: 100%;
+  height: calc(-49px + 100vh);
+  top: 82px;
+  left: 0px;
+}

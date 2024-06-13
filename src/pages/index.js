@@ -1,5 +1,9 @@
 import card_for_slider from "../components/card";
-import { swiper, swiper_for_photo_slider, swiper_for_text_slider } from "../components/swiper";
+import {
+  swiper,
+  swiper_for_photo_slider,
+  swiper_for_text_slider,
+} from "../components/swiper";
 import "./index.css";
 
 const photo_slider = document.querySelector(".swiper__photo-slider");
@@ -45,12 +49,16 @@ function addCard(arr) {
         .classList.remove("disable");
     }
 
-    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").src = props.img_src;
-    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").alt = props.img_alt;
-    sliderTemplateText.querySelector(".swiper-photo-slider__heading").textContent =
-      props.name;
-    sliderTemplateText.querySelector(".swiper-photo-slider__price-text").textContent =
-      formatNumberWithSpaces(props.price) + " ₽";
+    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").src =
+      props.img_src;
+    sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").alt =
+      props.img_alt;
+    sliderTemplateText.querySelector(
+      ".swiper-photo-slider__heading"
+    ).textContent = props.name;
+    sliderTemplateText.querySelector(
+      ".swiper-photo-slider__price-text"
+    ).textContent = formatNumberWithSpaces(props.price) + " ₽";
     // Получаем с бэкенда размеры
     props.sizes.forEach((element) => {
       const sizes_element = document.createElement("p");
@@ -66,3 +74,23 @@ function addCard(arr) {
 }
 
 addCard(card_for_slider);
+
+function addHeaderModal() {}
+
+function removeHeaderModal() {}
+
+const page = document.querySelector(".page");
+const fav_flag = document.querySelector(".fav-flag");
+const el = document.createElement("div");
+
+fav_flag.addEventListener("click", () => {
+  const header_modal_cover = document.querySelector('.header-modal-cover');
+  if(header_modal_cover) {
+    page.classList.remove("overflow-hidden");
+    header_modal_cover.remove();
+  } else {
+    el.classList.add("header-modal-cover");
+    page.classList.add("overflow-hidden");
+    page.append(el);
+  }
+});
