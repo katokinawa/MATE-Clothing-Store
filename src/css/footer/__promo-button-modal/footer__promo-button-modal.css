@@ -1,10 +1,11 @@
-.footer__promo-button {
+.footer__promo-button-modal {
   border: none;
   outline: none;
-  width: 327px;
+  width: 100%;
   height: 34px;
-  background-color: #dedede;
+  background-color: #313131;
   border-radius: 50px;
   font-weight: 500;
   font-size: 1.3rem;
+  color: white;
 }

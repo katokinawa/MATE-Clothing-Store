@@ -49,5 +49,13 @@
 @import url(../css/footer/__checkbox-wrapper/footer__checkbox-wrapper.css);
 @import url(../css/footer/__checkbox/footer__checkbox.css);
 @import url(../css/footer/__promo-button/footer__promo-button.css);
-@import url(../css/header-modal-cover/header-modal-cover.css);
+@import url(../css/footer/__promo-subscription-alert/footer__promo-subscription-alert.css);
+@import url(../css/footer/__promo-url/footer__promo-url.css);
+@import url(../css/header-modal/header-modal.css);
+@import url(../css/header-modal/__wrapper/header-modal__wrapper.css);
+@import url(../css/header-modal/__item/header-modal__item.css);
+@import url(../css/footer/__promo-modal/footer__promo-modal.css);
+@import url(../css/footer/__promo-description-modal/footer__promo-description-modal.css);
+@import url(../css/footer/__promo-filed-modal/footer__promo-field-modal.css);
+@import url(../css/footer/__promo-button-modal/footer__promo-button-modal.css);
 @import 'swiper/css/bundle';

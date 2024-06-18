@@ -1,0 +1,19 @@
+.footer__promo-field-modal {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 33px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: 1px solid #bdbdbd;
+  padding-left: 18px;
+  background-color: #eee;
+}
+
+.footer__promo-field-modal:focus {
+  border: 1px solid #dedede;
+}
+
+.footer__promo-field-modal::placeholder {
+  color: #bdbdbd;
+}

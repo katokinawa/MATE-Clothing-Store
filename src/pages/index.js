@@ -6,28 +6,37 @@ import {
 } from "../components/swiper";
 import "./index.css";
 
-const photo_slider = document.querySelector(".swiper__photo-slider");
-const text_slider = document.querySelector(".swiper__text-slider");
+const page = document.querySelector(".page");
+const header = document.querySelector(".header");
+const headerBurger = document.querySelector(".header__burger");
+const swiperPhotoSlider = document.querySelector(".swiper__photo-slider");
+const swiperTextSlider = document.querySelector(".swiper__text-slider");
+const regexPriceWithSpaces = /\B(?=(\d{3})+(?!\d))/g;
 
-function getTemplatePhoto() {
-  return document
-    .querySelector("#slider-photo")
-    .content.querySelector(".swiper-photo-slider__item-photo")
-    .cloneNode(true);
+function setListenerForAllSubsBlock() {
+  const footerPromoBlocks = document.querySelectorAll('.footer__promo')
+  footerPromoBlocks.forEach(element => setEventForSubscription(element))
 }
-function getTemplateText() {
+setListenerForAllSubsBlock();
+
+function getTemplate(id, parent) {
   return document
-    .querySelector("#slider-text")
-    .content.querySelector(".swiper-photo-slider__item-text")
+    .querySelector(`${id}`)
+    .content.querySelector(`${parent}`)
     .cloneNode(true);
 }
 
 function addCard(arr) {
   arr.forEach((props) => {
-    const sliderTemplatePhoto = getTemplatePhoto();
-    const sliderTemplateText = getTemplateText();
-
-    const sizes_wrapper = sliderTemplateText.querySelector(
+    const sliderTemplatePhoto = getTemplate(
+      "#slider-photo",
+      ".swiper-photo-slider__item-photo"
+    );
+    const sliderTemplateText = getTemplate(
+      "#slider-text",
+      ".swiper-photo-slider__item-text"
+    );
+    const sizesWrapper = sliderTemplateText.querySelector(
       ".swiper-photo-slider__sizes-wrapper"
     );
 
@@ -37,16 +46,24 @@ function addCard(arr) {
         return "Неверный формат числа";
       }
       const parts = number.toString().split(".");
-      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      parts[0] = parts[0].replace(regexPriceWithSpaces, " ");
       return parts.join(".");
     }
 
-    // Проверка на актуальность карточки товара из этого следует добавлять надпись "НОВОЕ" или нет
+    function createSizesForSlider(element) {
+      const sizes_element = document.createElement("p");
+      sizes_element.classList.add("swiper-photo-slider__sizes-text");
+      sizes_element.classList.add("text-uppercase");
+      sizes_element.textContent = element;
+      sizesWrapper.append(sizes_element);
+    }
+
+    // Проверка на актуальность карточки товара из этого следует добавлять надпись 'НОВОЕ' или нет
     // Приходят на фронт в виде ключ-значение new: true || new: false,
     if (props.new === true) {
       sliderTemplatePhoto
         .querySelector(".swiper-photo-slider__promo-text")
-        .classList.remove("disable");
+        .classList.remove("disabled");
     }
 
     sliderTemplatePhoto.querySelector(".swiper-photo-slider__img").src =
@@ -61,35 +78,50 @@ function addCard(arr) {
     ).textContent = formatNumberWithSpaces(props.price) + " ₽";
     // Получаем с бэкенда размеры
     props.sizes.forEach((element) => {
-      const sizes_element = document.createElement("p");
-      sizes_element.classList.add("swiper-photo-slider__sizes-text");
-      sizes_element.classList.add("text-uppercase");
-      sizes_element.textContent = element;
-      sizes_wrapper.append(sizes_element);
+      createSizesForSlider(element);
     });
     // Добавляем размеры в наш template
-    photo_slider.append(sliderTemplatePhoto);
-    text_slider.append(sliderTemplateText);
+    swiperPhotoSlider.append(sliderTemplatePhoto);
+    swiperTextSlider.append(sliderTemplateText);
   });
 }
 
 addCard(card_for_slider);
 
-// Создание и встраивание модального окна при нажатии на бургер
-const page = document.querySelector(".page");
-const headerBurger = document.querySelector(".header__burger");
+function findAlertAndShowup(event) {
+  event.currentTarget
+    .querySelector(".footer__promo-subscription-alert")
+    .classList.remove("disabled");
+}
 
-const headerWrapperModal = document.createElement("div");
-headerWrapperModal.classList.add("header-modal-cover");
+function setEventForSubscription(element) {
+  element.addEventListener("click", (evt) => {
+    findAlertAndShowup(evt);
+  });
+}
 
-headerBurger.addEventListener("click", () => {
-  const headerModal = document.querySelector(".header-modal-cover");
+function removeEventForSubscription(element) {
+  element.removeEventListener("click", findAlertAndShowup);
+}
 
+function switchHeaderModal() {
+  const headerModal = document.querySelector(".header-modal");
+  const modalTemplate = getTemplate("#header-modal", ".header-modal");
   if (headerModal) {
+    headerBurger.classList.remove("fav-close")
+    header.classList.remove("background-f6f5f3");
     page.classList.remove("overflow-hidden");
+    removeEventForSubscription(headerModal);
     headerModal.remove();
   } else {
+    headerBurger.classList.add("fav-close")
+    header.classList.add("background-f6f5f3");
     page.classList.add("overflow-hidden");
-    page.append(headerWrapperModal);
+    setEventForSubscription(modalTemplate);
+    page.append(modalTemplate);
   }
+}
+
+headerBurger.addEventListener("click", () => {
+  switchHeaderModal();
 });

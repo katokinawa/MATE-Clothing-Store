@@ -1,0 +1,8 @@
+.header-modal__item {
+  padding: 15px 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+.header-modal__item:first-child {
+  border-top: none;
+}
