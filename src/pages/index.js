@@ -75,22 +75,21 @@ function addCard(arr) {
 
 addCard(card_for_slider);
 
-function addHeaderModal() {}
-
-function removeHeaderModal() {}
-
+// Создание и встраивание модального окна при нажатии на бургер
 const page = document.querySelector(".page");
-const fav_flag = document.querySelector(".fav-flag");
-const el = document.createElement("div");
+const headerBurger = document.querySelector(".header__burger");
 
-fav_flag.addEventListener("click", () => {
-  const header_modal_cover = document.querySelector('.header-modal-cover');
-  if(header_modal_cover) {
+const headerWrapperModal = document.createElement("div");
+headerWrapperModal.classList.add("header-modal-cover");
+
+headerBurger.addEventListener("click", () => {
+  const headerModal = document.querySelector(".header-modal-cover");
+
+  if (headerModal) {
     page.classList.remove("overflow-hidden");
-    header_modal_cover.remove();
+    headerModal.remove();
   } else {
-    el.classList.add("header-modal-cover");
     page.classList.add("overflow-hidden");
-    page.append(el);
+    page.append(headerWrapperModal);
   }
 });

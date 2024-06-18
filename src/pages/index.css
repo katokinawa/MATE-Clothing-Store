@@ -6,11 +6,15 @@
 @import url(../css/page/__attention/page__attention.css);
 @import url(../css/header/header.css);
 @import url(../css/header/__list-left/header__list-left.css);
+@import url(../css/header/__list-right/header__list-right.css);
+@import url(../css/header/__left/header__left.css);
+@import url(../css/header/__nav-left/header__nav-left.css);
+@import url(../css/header/__right/header__right.css);
 @import url(../css/header/__logo/header__logo.css);
+@import url(../css/header/__burger/header__burger.css);
 @import url(../css/header/__list-item/header__list-item.css);
 @import url(../css/header/__list-wrapper/header__list-wrapper.css);
-@import url(../css/header/__list-fav/header__list-fav.css);
-@import url(../css/header/__list-right/header__list-right.css);
+@import url(../css/header/__favicon-padding/header__favicon-padding.css);
 @import url(../css/main/main.css);
 @import url(../css/banner/banner.css);
 @import url(../css/banner/__link/banner__link.css);

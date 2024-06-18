@@ -94,22 +94,38 @@
   width: var(--fav-header-width);
   height: var(--fav-header-height);
   background-image: url(../img/svg/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1440px) {
+  .fav-search {
+    position: absolute;
+    left: 50px;
+    top: 8px;
+  }
 }
 
 .fav-account {
   width: var(--fav-header-width);
   height: var(--fav-header-height);
   background-image: url(../img/svg/account.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fav-flag {
   width: var(--fav-header-width);
   height: var(--fav-header-height);
   background-image: url(../img/svg/flag.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fav-bag {
   width: var(--fav-header-width);
   height: var(--fav-header-height);
   background-image: url(../img/svg/bag.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
