@@ -1,6 +1,6 @@
 .footer__checkbox {
   position: relative;
-  padding-left: 25px;
+  padding: 3.1px 0 0 25px;
   font-weight: 400;
   font-size: 1.2rem;
 }

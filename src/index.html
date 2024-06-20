@@ -9,7 +9,10 @@
 
 <body class="body">
   <div class="page">
-    <div class="page__attention text-uppercase">Attention! THIS SITE IS FOR VIEWING ONLY. NOT FOR SHOPPING.</div>
+    <div class="page__attention-wrapper">
+      <div class="page__attention text-uppercase">Attention! THIS SITE IS FOR VIEWING ONLY. NOT FOR SHOPPING.</div>
+      <div class="page__attention-close"></div>
+    </div>
     <header class="header">
       <div class="header__list-wrapper">
         <div class="header__left">
@@ -65,16 +68,16 @@
         </div>
       </article>
       <article class="swiper-photo-slider">
-        <div class="swiper-wrapper swiper__photo-slider">
+        <div class="swiper-wrapper swiper-photo-slider__photo-slider">
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </article>
       <article class="swiper-text-slider">
-        <div class="swiper-wrapper swiper__text-slider">
+        <div class="swiper-wrapper swiper-text-slider__text-slider">
         </div>
       </article>
-      <article class="banner second__banner">
+      <article class="banner">
         <a class="banner__link" href="#"></a>
         <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
       </article>
@@ -178,7 +181,7 @@
   </div>
   <template id="header-modal">
     <div class="header-modal">
-      <div class="header-modal_wrapper">
+      <div class="header-modal__wrapper">
         <ul>
           <li class="header-modal__item text-uppercase">Новинки коллекции</li>
           <li class="header-modal__item text-uppercase">Летняя распродажа</li>
@@ -225,6 +228,13 @@
               конфиденциальности</a>
           </div>
         </section>
+        <aside class="header-modal__aside">
+          <div class="header-modal__title text-uppercase margin-bottom-10">Возникли вопросы?</div>
+          <div class="header-modal__link-wrapper">
+            <a class="header-modal__link-button text-second-family" href="#">8 800 088 08 08</a>
+            <a class="header-modal__link-button text-second-family text-uppercase" href="#">katokinawa@icloud.com</a>
+          </div>
+        </aside>
 
       </div>
     </div>
