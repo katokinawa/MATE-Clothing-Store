@@ -1,0 +1,10 @@
+.footer__list-wrapper-mobile {
+  display: none;
+}
+
+
+@media (max-width: 1440px) {
+  .footer__list-wrapper-mobile {
+    display: block;
+  }
+}

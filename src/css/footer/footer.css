@@ -5,3 +5,10 @@
   background-color: #ededed;
   padding: 30px 58px 56px;
 }
+
+@media (max-width: 1440px) {
+  .footer {
+    padding: 0;
+    display: block;
+  }
+}

@@ -10,7 +10,7 @@
   color: white;
   background-color: #313131;
   animation-name: attention-showup;
-  animation-duration: 1s;
+  animation-duration: 1s
 }
 
 @keyframes attention-showup {

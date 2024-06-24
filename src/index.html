@@ -102,6 +102,35 @@
       </article>
     </main>
     <footer class="footer">
+      <section class="footer__promo footer__promo-mobile">
+        <p class="footer__promo-heading margin-bottom-10 text-uppercase margin-bottom-10">скидка 10% на первый
+          заказ</p>
+        <p class="footer__promo-description-mobile margin-bottom-15">А также секретные распродажи, уникальные акции и
+          интересные статьи только для подписчиков рассылки
+        </p>
+        <form class="footer__promo-form" action="" method="post">
+          <input type="text" class="footer__promo-field-mobile margin-bottom-10 mail-input" placeholder="ЭЛ. ПОЧТА"
+            pattern="/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u"
+            required />
+          <div class="footer__checkbox-wrapper margin-bottom-10">
+            <label class="footer__styled-checkbox">
+              <input type="checkbox" class="footer__promo-checkbox" id="woman-coll" name="woman-coll" />
+              <span class="footer__checkbox">Женская коллекция</span>
+            </label>
+            <label class="footer__styled-checkbox">
+              <input type="checkbox" class="footer__promo-checkbox" id="man-coll" name="man-coll" />
+              <span class="footer__checkbox">Мужская коллекция</span>
+            </label>
+          </div>
+          <input type="submit" class="footer__promo-button-mobile text-second-family text-uppercase"
+            value="ПОДПИСАТЬСЯ" />
+        </form>
+        <div class="footer__promo-subscription-alert margin-top-10 disabled">
+          Нажимая на кнопку «Подписаться» Вы соглашаетесь на обработку персональных данных и получение новостей, а
+          также подтверждаете, что ознакомились с <a class="footer__promo-url" href="#">политикой
+            конфиденциальности</a>
+        </div>
+      </section>
       <div class="footer__list-wrapper">
         <ul class="footer__list">
           <li class="footer__list-item margin-bottom-20 text-uppercase">О нас</li>
@@ -148,6 +177,12 @@
           <li class="footer__list-item margin-bottom-15 text-uppercase"></li>
           <li class="footer__list-item margin-bottom-15 text-uppercase">© Daniil Belogur</li>
         </ul>
+      </div>
+      <div class="footer__list-wrapper footer__list-wrapper-mobile">
+        <div>О нас</div>
+        <div>Покупателям</div>
+        <div>Контакты</div>
+
       </div>
       <section class="footer__promo">
         <p class="footer__promo-heading margin-bottom-15 text-uppercase margin-bottom-10">скидка 10% на первый
@@ -199,14 +234,14 @@
           <li class="header-modal__item text-uppercase">Отзывы</li>
           <li class="header-modal__item text-uppercase">Контакты</li>
         </ul>
-        <section class="footer__promo footer__promo-modal">
+        <section class="footer__promo footer__promo-mobile">
           <p class="footer__promo-heading margin-bottom-10 text-uppercase margin-bottom-10">скидка 10% на первый
             заказ</p>
-          <p class="footer__promo-description-modal margin-bottom-15">А также секретные распродажи, уникальные акции и
+          <p class="footer__promo-description-mobile margin-bottom-15">А также секретные распродажи, уникальные акции и
             интересные статьи только для подписчиков рассылки
           </p>
           <form class="footer__promo-form" action="" method="post">
-            <input type="text" class="footer__promo-field-modal margin-bottom-10 mail-input" placeholder="ЭЛ. ПОЧТА"
+            <input type="text" class="footer__promo-field-mobile margin-bottom-10 mail-input" placeholder="ЭЛ. ПОЧТА"
               pattern="/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u"
               required />
             <div class="footer__checkbox-wrapper margin-bottom-10">
@@ -219,7 +254,7 @@
                 <span class="footer__checkbox">Мужская коллекция</span>
               </label>
             </div>
-            <input type="submit" class="footer__promo-button-modal text-second-family text-uppercase"
+            <input type="submit" class="footer__promo-button-mobile text-second-family text-uppercase"
               value="ПОДПИСАТЬСЯ" />
           </form>
           <div class="footer__promo-subscription-alert margin-top-10 disabled">
