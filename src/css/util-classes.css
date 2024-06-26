@@ -3,6 +3,10 @@
   --fav-header-height: 22px;
 }
 
+.disabled {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }

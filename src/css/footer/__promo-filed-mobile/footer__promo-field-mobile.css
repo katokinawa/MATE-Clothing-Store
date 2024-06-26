@@ -8,10 +8,10 @@
   background-color: #eee;
 }
 
-.footer__promo-field-modal:focus {
+.footer__promo-field-mobile:focus {
   border: 1px solid #dedede;
 }
 
-.footer__promo-field-modal::placeholder {
+.footer__promo-field-mobile::placeholder {
   color: #bdbdbd;
 }

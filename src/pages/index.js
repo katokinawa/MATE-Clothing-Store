@@ -14,12 +14,6 @@ const swiperTextSlider = document.querySelector('.swiper-text-slider__text-slide
 const attentionWrapper = document.querySelector('.page__attention-wrapper')
 const regexPriceWithSpaces = /\B(?=(\d{3})+(?!\d))/g;
 
-function setListenerForAllSubsBlock() {
-  const footerPromoBlocks = document.querySelectorAll('.footer__promo')
-  footerPromoBlocks.forEach(element => setEventForSubscription(element))
-}
-setListenerForAllSubsBlock();
-
 function getTemplate(id, parent) {
   return document
     .querySelector(`${id}`)
@@ -89,21 +83,20 @@ function addCard(arr) {
 
 addCard(card_for_slider);
 
-function findAlertAndShowup(event) {
-  event.currentTarget
-    .querySelector('.footer__promo-subscription-alert')
-    .classList.remove('disabled');
+function setEventForSubscription(mail_input, alert_element) {
+  mail_input.addEventListener('click', () => alert_element.classList.remove('disabled'));
 }
 
-function setEventForSubscription(element) {
-  element.addEventListener('click', (evt) => {
-    findAlertAndShowup(evt);
-  });
+function setListenerForAllSubsBlock() {
+  const footerPromoBlocks = document.querySelectorAll('.footer__promo')
+  footerPromoBlocks.forEach(element => {
+    const alert_element = element.querySelector('.footer__promo-subscription-alert');
+    const mail_input = element.querySelector('.mail-input')
+    setEventForSubscription(mail_input, alert_element)
+})
 }
+setListenerForAllSubsBlock();
 
-function removeEventForSubscription(element) {
-  element.removeEventListener('click', findAlertAndShowup);
-}
 
 function switchHeaderModal() {
   const headerModal = document.querySelector('.header-modal');
@@ -112,13 +105,11 @@ function switchHeaderModal() {
     headerBurger.classList.remove('fav-close')
     header.classList.remove('background-f6f5f3');
     page.classList.remove('overflow-hidden');
-    removeEventForSubscription(headerModal);
     headerModal.remove();
   } else {
     headerBurger.classList.add('fav-close')
     header.classList.add('background-f6f5f3');
     page.classList.add('overflow-hidden');
-    setEventForSubscription(modalTemplate);
     page.append(modalTemplate);
   }
 }
