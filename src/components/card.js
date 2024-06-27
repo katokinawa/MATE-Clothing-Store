@@ -1,5 +1,3 @@
-
-
 // вебпак изменяет имена файлов при сборке поэтому импортируем их в js, а после добавляем в card_for_slider
 import model01 from '../img/models/model01.jpg'
 import model02 from '../img/models/model02.jpg'
