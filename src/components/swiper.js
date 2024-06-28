@@ -14,6 +14,9 @@ const swiper = new Swiper('.swiper', {
   },
   //1920px, 1440px, 1024px, 768px, 390px
   breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
     390: {
       slidesPerView: 3,
     },
@@ -53,7 +56,7 @@ let swiper_for_photo_slider = new Swiper('.swiper-photo-slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    390: {
+    0: {
       slidesPerView: 1,
     },
     768: {
@@ -70,7 +73,7 @@ let swiper_for_text_slider = new Swiper('.swiper-text-slider', {
   slidesPerView: 4,
   grabCursor: true,
   breakpoints: {
-    390: {
+    0: {
       slidesPerView: 1,
     },
     768: {

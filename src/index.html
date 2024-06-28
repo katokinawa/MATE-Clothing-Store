@@ -43,7 +43,11 @@
     <main class="main">
       <article class="banner main__banner">
         <a class="banner__link" href="#"></a>
-        <img class="banner__photo" src="<%=require('./img/banners/main_banner.jpg')%>"></img>
+          <picture>
+            <source media="(min-width: 768px)" srcset="<%=require('./img/banners/main_banner.jpg')%>">
+            <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_mobile.jpg')%>">
+            <img class="banner__photo" src="<%=require('./img/banners/main_banner.jpg')%>"></img>
+          </picture>
         <div class="banner__button-wrapper">
           <p class="banner__inner-button text-second-family text-uppercase">Новинки коллекции</p>
         </div>
@@ -84,7 +88,11 @@
       </article>
       <article class="banner">
         <a class="banner__link" href="#"></a>
-        <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="<%=require('./img/banners/main_banner_2.jpg')%>">
+          <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_2_mobile.jpg')%>">
+          <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
+        </picture>
       </article>
       <article class="swiper">
         <div class="swiper__wrapper">
