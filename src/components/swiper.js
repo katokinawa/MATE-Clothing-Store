@@ -17,17 +17,29 @@ const swiper = new Swiper('.swiper', {
     390: {
       slidesPerView: 3,
     },
+    500: {
+      slidesPerView: 4,
+    },
+    624: {
+      slidesPerView: 5,
+    },
     768: {
       slidesPerView: 6,
+    },
+    874: {
+      slidesPerView: 7,
     },
     1024: {
       slidesPerView: 8,
     },
-    1440: {
-      slidesPerView: 10,
+    1380: {
+      slidesPerView: 11,
+    },
+    1441: {
+      slidesPerView: 8,
     },
     1920: {
-      slidesPerView: 8,
+      slidesPerView: 10,
     },
   }
 });
@@ -40,12 +52,34 @@ let swiper_for_photo_slider = new Swiper('.swiper-photo-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    390: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  }
 })
 
 let swiper_for_text_slider = new Swiper('.swiper-text-slider', {
   spaceBetween: 10,
   slidesPerView: 4,
   grabCursor: true,
+  breakpoints: {
+    390: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  }
 })
 
 swiper_for_photo_slider.controller.control = swiper_for_text_slider;
