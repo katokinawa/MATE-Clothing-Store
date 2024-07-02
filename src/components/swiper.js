@@ -62,6 +62,9 @@ let swiper_for_photo_slider = new Swiper('.swiper-photo-slider', {
     768: {
       slidesPerView: 2,
     },
+    1024: {
+      slidesPerView: 3,
+    },
     1440: {
       slidesPerView: 4,
     },
@@ -78,6 +81,9 @@ let swiper_for_text_slider = new Swiper('.swiper-text-slider', {
     },
     768: {
       slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
     },
     1440: {
       slidesPerView: 4,

@@ -21,6 +21,7 @@
 @import url(../css/main/main.css);
 @import url(../css/banner/banner.css);
 @import url(../css/banner/__link/banner__link.css);
+@import url(../css/banner/__photo-wrapper/banner__photo-wrapper.css);
 @import url(../css/banner/__photo/banner__photo.css);
 @import url(../css/banner/__button-wrapper/banner__button-wrapper.css);
 @import url(../css/banner/__inner-button/banner__inner-button.css);

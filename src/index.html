@@ -42,15 +42,18 @@
     </header>
     <main class="main">
       <article class="banner main__banner">
-        <a class="banner__link" href="#"></a>
-          <picture>
-            <source media="(min-width: 768px)" srcset="<%=require('./img/banners/main_banner.jpg')%>">
-            <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_mobile.jpg')%>">
-            <img class="banner__photo" src="<%=require('./img/banners/main_banner.jpg')%>"></img>
-          </picture>
-        <div class="banner__button-wrapper">
-          <p class="banner__inner-button text-second-family text-uppercase">Новинки коллекции</p>
-        </div>
+        <a class="banner__link" href="#">
+          <div class="banner__photo-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="<%=require('./img/banners/main_banner.jpg')%>">
+              <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_mobile.jpg')%>">
+              <img class="banner__photo" src="<%=require('./img/banners/main_banner.jpg')%>" />
+            </picture>
+            <div class="banner__button-wrapper">
+              <p class="banner__inner-button text-second-family text-uppercase">Новинки коллекции</p>
+            </div>
+          </div>
+        </a>
       </article>
       <article class="swiper">
         <div class="swiper__wrapper">
@@ -87,12 +90,15 @@
         </div>
       </article>
       <article class="banner">
-        <a class="banner__link" href="#"></a>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="<%=require('./img/banners/main_banner_2.jpg')%>">
-          <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_2_mobile.jpg')%>">
-          <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>"></img>
-        </picture>
+        <a class="banner__link" href="#">
+          <div class="banner__photo-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="<%=require('./img/banners/main_banner_2.jpg')%>">
+              <source media="(min-width: 1px)" srcset="<%=require('./img/banners/main_banner_2_mobile.jpg')%>">
+              <img class="banner__photo" src="<%=require('./img/banners/main_banner_2.jpg')%>" />
+            </picture>
+          </div>
+        </a>
       </article>
       <article class="swiper">
         <div class="swiper__wrapper">
@@ -229,7 +235,6 @@
         </div>
       </section>
     </footer>
-
   </div>
   <template id="header-modal">
     <div class="header-modal">

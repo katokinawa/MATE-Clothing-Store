@@ -3,6 +3,10 @@
   --fav-header-height: 22px;
 }
 
+div {
+  display: block;
+}
+
 .disabled {
   display: none !important;
 }
@@ -43,6 +47,7 @@ input {
   background-size: contain;
   width: 24px;
   height: 24px;
+  scale: 1.5;
 }
 
 .swiper-photo-slider .swiper-button-next::after {
@@ -53,6 +58,7 @@ input {
   background-size: contain;
   width: 24px;
   height: 24px;
+  scale: 1.5;
 }
 
 /* text */
