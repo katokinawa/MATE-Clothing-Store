@@ -23,6 +23,6 @@ headerBurger.addEventListener('click', () => {
 
 // Закрытие предупреждения по крестику над хедером
 attention.addEventListener('click', (() => {
-  attentionWrapper.classList.add('disabled')
+  attentionWrapper.remove();
   header.classList.add('no-margin');
 }))
