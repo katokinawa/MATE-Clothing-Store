@@ -7,7 +7,7 @@
 .page__attention-wrapper{align-items:center;animation-duration:1s;animation-name:attention-showup;background-color:#313131;color:#fff;display:flex;font-size:1rem;height:30px;justify-content:center;position:fixed;width:100%;z-index:15}@keyframes attention-showup{0%{top:-30px}to{top:0}}
 .page__attention-close{background-image:url(39bf9d4f3bbea4850f26.svg);background-position:50%;background-repeat:no-repeat;height:22px;position:absolute;right:10px;top:3px;width:22px}
 
-.header{background-color:#fff;display:flex;min-height:50px;padding:30px 0 0;position:fixed;width:100%;z-index:10}@media (max-width:1440px){.header{padding:40px 0 0}}
+.header{background-color:#fff;display:flex;min-height:50px;padding:30px 0 0;position:fixed;width:100%;z-index:10}
 .header__list-left{align-items:center;display:flex}
 .header__list-right{align-items:center;display:flex}
 .header__left{align-items:center;display:flex}
@@ -17,7 +17,7 @@
 .header__burger{display:none}@media (max-width:1440px){.header__burger{background-image:url(d39a5a2138052d59946f.svg);background-position:50%;background-repeat:no-repeat;background-size:contain;display:block;height:22px;margin-left:15px;width:22px}}
 .header__list-item{font-size:1.2rem;font-weight:400;padding:17px 15px}@media (max-width:1440px){.header__list-item:nth-last-child(-n+2){display:none}}
 .header__list-wrapper{align-items:center;display:flex;justify-content:space-between;width:100%}
-.header__favicon-padding{padding:17px 20px}
+.header__favicon-padding{padding:27px 20px}
 
 
 .banner__link{position:relative}
@@ -57,7 +57,7 @@
 .footer__promo-button{background-color:#dedede;border-radius:50px;font-size:1.3rem;font-weight:500;height:34px;width:327px}
 .footer__promo-subscription-alert{color:#696969;font-size:1rem;font-weight:400;line-height:140%}
 .footer__promo-url{color:#696969}
-.header-modal{background-color:#eee;height:calc(-49px + 100vh);left:0;overflow-y:auto;padding:0 0 80px;position:fixed;top:80px;width:100%;z-index:15}
+.header-modal{background-color:#eee;height:calc(-49px + 100vh);left:0;overflow-y:auto;padding:0 0 80px;position:fixed;top:54px;width:100%;z-index:15}
 
 .header-modal__item{border-bottom:1px solid #dedede;padding:15px 10px}.header-modal__item:first-child{border-top:none}
 .footer__promo-mobile{border-bottom:1px solid #e8e8e8;display:none;height:auto;padding:22px 10px 20px;width:100%}@media (max-width:1440px){.footer__promo-mobile{display:block}}
