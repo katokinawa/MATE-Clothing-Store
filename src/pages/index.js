@@ -7,6 +7,7 @@ import addCard from '../components/addCard'
 import switchHeaderModal from '../components/switchHeaderModal'
 import setEventForSubscription from '../components/setEventForSubscription';
 import card_for_slider from '../components/card';
+import handleFooterClick from "../components/handleFooterClick";
 import { header, headerBurger, attentionWrapper, attention } from '../utils/constants'
 import './index.css';
 
@@ -26,3 +27,6 @@ attention.addEventListener('click', (() => {
   attentionWrapper.remove();
   header.classList.add('no-margin');
 }))
+
+// Позволям открывать и закрывать категории в футере в мобильной версии
+handleFooterClick();

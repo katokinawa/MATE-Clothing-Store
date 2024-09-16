@@ -107,6 +107,10 @@ input {
   margin-top: 10px;
 }
 
+.margin-top-20 {
+  margin-top: 20px;
+}
+
 .no-margin {
   margin: 0 !important;
   padding: 0 !important;

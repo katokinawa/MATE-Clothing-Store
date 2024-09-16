@@ -4,14 +4,8 @@
   width: 25rem;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1440px) {
   .footer__list {
-    width: 20rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .footer__list {
-    width: 17rem;
+    width: auto;
   }
 }
