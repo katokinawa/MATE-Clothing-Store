@@ -1,0 +1,13 @@
+.footer__list-icon {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../img/svg/arrow-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+
+}
