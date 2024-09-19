@@ -10,6 +10,8 @@
 <body class="body">
   <div class="page">
     <div class="page__attention-wrapper">
+
+      <!-- Варнинг над хедером с любой полезной информацией -->
       <div class="page__attention text-uppercase">
         Attention! THIS SITE IS FOR VIEWING ONLY. NOT FOR SHOPPING.
       </div>
@@ -45,6 +47,8 @@
       </div>
     </header>
     <main class="main">
+      
+      <!-- Главный промо-баннер на странице -->
       <article class="banner main__banner">
         <a class="banner__link" href="#">
           <div class="banner__photo-wrapper">
@@ -62,6 +66,7 @@
         </a>
       </article>
 
+      <!-- Карусель с надписью "Добро пожаловать" -->
       <article class="swiper">
         <div class="swiper__wrapper">
           <div class="swiper-slide swiper__text text-second-family text-uppercase">
@@ -126,11 +131,15 @@
           </div>
         </div>
       </article>
+
+      <!-- Свайпер для фото у карточек товара -->
       <article class="swiper-photo-slider">
         <div class="swiper-wrapper swiper-photo-slider__photo-slider"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </article>
+
+      <!-- Свайпер для текста у карточек товара -->
       <article class="swiper-text-slider">
         <div class="swiper-wrapper swiper-text-slider__text-slider"></div>
       </article>
@@ -147,6 +156,8 @@
           </div>
         </a>
       </article>
+
+      <!-- Карусель с надписью "Добро пожаловать" -->
       <article class="swiper">
         <div class="swiper__wrapper">
           <div class="swiper-slide swiper__text text-second-family text-uppercase">
@@ -213,6 +224,8 @@
       </article>
     </main>
     <footer class="footer">
+
+      <!-- Промо для мобильной версии -->
       <section class="footer__promo footer__promo-mobile">
         <p class="footer__promo-heading margin-bottom-10 text-uppercase margin-bottom-10">
           скидка 10% на первый заказ
@@ -245,6 +258,8 @@
           <a class="footer__promo-url" href="#">политикой конфиденциальности</a>
         </div>
       </section>
+
+      <!-- Лист в футере для десктопной версии -->
       <div class="footer__list-wrapper">
         <ul class="footer__list">
           <li class="footer__list-item margin-bottom-20 text-uppercase">
@@ -339,6 +354,8 @@
           </li>
         </ul>
       </div>
+
+      <!-- Лист в футере для мобильной версии -->
       <div class="footer__list-wrapper-mobile">
         <div class="footer__list-block-mobile text-uppercase">
           <p class="padding-bottom-20 padding-top-20">О нас</p>
@@ -408,6 +425,8 @@
           </ul>
           <div class="footer__list-icon footer__list-icon_arrow-top"></div>
         </div>
+
+        <!-- Блоки в футере для мобильной версии-->
         <div class="footer__list-wrapper-mobile">
           <ul class="footer__list-blocks">
             <li class="footer__list-item-block margin-bottom-15 text-uppercase">
@@ -434,6 +453,8 @@
           </ul>
         </div>
       </div>
+
+      <!-- Промо для десктопной версии -->
       <section class="footer__promo">
         <p class="footer__promo-heading margin-bottom-15 text-uppercase margin-bottom-10">
           скидка 10% на первый заказ
@@ -467,6 +488,7 @@
       </section>
     </footer>
   </div>
+  <!-- Для мобильной версии при открытии бургера  -->
   <template id="header-modal">
     <div class="header-modal">
       <div class="header-modal__wrapper">
@@ -531,6 +553,7 @@
       </div>
     </div>
   </template>
+  <!-- Слайдер для карточек товара -->
   <template id="slider-photo">
     <div class="swiper-slide swiper-photo-slider__item-photo">
       <img class="swiper-photo-slider__img" src="#" alt="" />
@@ -540,6 +563,7 @@
       <div class="swiper-photo-slider__favorite-icon"></div>
     </div>
   </template>
+  <!-- Слайдер для текста у карточек товара -->
   <template id="slider-text">
     <div class="swiper-slide swiper-photo-slider__item-text">
       <h3 class="swiper-photo-slider__heading text-second-family text-uppercase"></h3>
