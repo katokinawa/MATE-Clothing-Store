@@ -1,4 +1,5 @@
- # Магазин одежды: MATE
+# На текущий момент переехал на реакт <a href="https://github.com/katokinawa/React-and-Vite-MATE-Clothing-Store">сюда</a>
+# Магазин одежды: MATE
 
 Создаётся без коммерческой основы для развития и самореализации
 
